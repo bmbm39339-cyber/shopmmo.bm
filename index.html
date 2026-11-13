@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shopmmo.BM — Sàn giao dịch tài khoản số</title>
+<style>
+:root{--g:#245b49;--gd:#173f33;--mint:#edf4ef;--bg:#f5f6f3;--ink:#24332c;--muted:#77847c;--line:#e3e9e4;--gold:#c5a66b;--red:#b94e48;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 Inter,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}header{background:linear-gradient(110deg,#14372d,#28634d);color:#fff;position:sticky;top:0;z-index:5;box-shadow:0 4px 18px #102b201c}.top{max-width:1280px;margin:auto;padding:13px 20px;display:flex;align-items:center;gap:18px}.brand{font-size:25px;font-weight:850;letter-spacing:.2px;white-space:nowrap}.brand span{color:#d5bd86}.tag{font-size:10px;color:#d9e9df;letter-spacing:1.3px}.search{flex:1;display:flex;max-width:560px}.search input{width:100%;border:0;border-radius:9px 0 0 9px;padding:11px 13px}.search button{background:#d5bd86;color:#24332c;padding:0 17px;border-radius:0 9px 9px 0;font-weight:800}.userbar{margin-left:auto;display:flex;align-items:center;gap:9px}.nav{background:#1b4939}.navin{max-width:1280px;margin:auto;padding:0 20px;display:flex;gap:5px;overflow:auto}.nav button{background:transparent;color:#e6f0e9;padding:12px 14px;white-space:nowrap;border-bottom:2px solid transparent}.nav button.active,.nav button:hover{border-color:#d5bd86;color:#fff}.wrap{max-width:1280px;margin:24px auto;padding:0 20px}.hero{background:linear-gradient(115deg,#e9f0e9,#f7f4eb);border:1px solid #e0e8df;border-radius:18px;padding:25px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}.hero h1{font-size:27px;margin:0 0 5px;color:#1c4736}.hero p{margin:0;color:#65736a}.hero-stat{display:flex;gap:22px}.stat strong{display:block;font-size:21px;color:#245b49}.stat small{color:var(--muted)}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:25px 0 13px;gap:12px}.sectionhead h2{font-size:19px;margin:0}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.product{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}.product .thumb{height:112px;background:linear-gradient(135deg,#e7efe8,#f3efe4);display:grid;place-items:center;color:#245b49;font-size:35px;font-weight:900}.product .body{padding:13px;display:flex;flex-direction:column;flex:1}.product h3{font-size:14px;margin:0 0 5px}.price{font-size:18px;font-weight:850;color:#245b49}.product .meta{font-size:11px;color:var(--muted);margin:5px 0 12px}.actions{display:flex;gap:7px;margin-top:auto}.btn{border-radius:8px;padding:9px 12px;font-weight:750;background:var(--g);color:white}.btn:hover{background:var(--gd)}.btn.light{background:var(--mint);color:var(--g)}.btn.gold{background:#d7c08f;color:#26372e}.btn.red{background:#f9e9e7;color:#a33d38}.btn.small{padding:6px 9px;font-size:12px}.btn:disabled{opacity:.45;cursor:not-allowed}.panel{background:white;border:1px solid var(--line);border-radius:14px;padding:18px;margin:14px 0}.hidden{display:none!important}.cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}.formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.field{display:flex;flex-direction:column;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:750;color:#58665d}.field input,.field select,.field textarea{width:100%;border:1px solid #dce4dd;border-radius:8px;padding:10px;background:#fff;color:var(--ink)}textarea{min-height:86px;resize:vertical}.row{display:flex;align-items:center;gap:9px;flex-wrap:wrap}.between{justify-content:space-between}.pill{display:inline-block;border-radius:30px;background:#edf4ef;color:#35644c;padding:3px 9px;font-size:11px;font-weight:750}.pill.wait{background:#fff4dc;color:#89651d}.pill.bad{background:#fbe9e7;color:#a23e38}.pill.good{background:#e4f4e9;color:#246443}.tablewrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:10px;border-bottom:1px solid #edf0ed;font-size:12px}th{color:#69766d;background:#f8faf8}.empty{padding:25px;text-align:center;color:var(--muted)}.wallet{font-size:27px;font-weight:900;color:#245b49}.notice{padding:11px 13px;background:#fff7e7;border:1px solid #f0dfb8;border-radius:9px;color:#745b28;font-size:12px}.chatbox{height:300px;overflow:auto;background:#f7f9f7;border:1px solid var(--line);padding:12px;border-radius:10px}.msg{max-width:82%;padding:8px 11px;border-radius:11px;background:#fff;border:1px solid var(--line);margin:7px 0}.msg.mine{margin-left:auto;background:#e8f3eb;border-color:#d6e7d9}.msg small{display:block;color:var(--muted);font-size:10px}.tabs{display:flex;gap:7px;flex-wrap:wrap}.tabs button{padding:8px 12px;border-radius:8px;background:#eef3ef;color:#3b5c49;font-weight:700}.tabs button.active{background:var(--g);color:white}.footer{text-align:center;padding:30px;color:#89938c;font-size:12px}.adminmark{background:#fff0d5;color:#795719}.inline{display:inline-flex;align-items:center;gap:6px}dialog{border:0;border-radius:15px;max-width:560px;width:calc(100% - 28px);padding:0;box-shadow:0 20px 70px #0004}dialog::backdrop{background:#14251dcc}.modalhead{padding:16px 19px;background:#edf4ef;display:flex;justify-content:space-between}.modalbody{padding:18px}.x{background:transparent;font-size:22px;color:#66736b}@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{align-items:flex-start;flex-direction:column}.hero-stat{gap:25px}}@media(max-width:600px){.top{flex-wrap:wrap;padding:11px 13px}.brand{font-size:22px}.search{order:3;max-width:none;flex-basis:100%}.userbar{font-size:12px}.wrap{padding:0 12px;margin:15px auto}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product .thumb{height:86px}.product .body{padding:10px}.product h3{font-size:12px}.price{font-size:16px}.actions .btn{padding:8px 7px;font-size:11px}.cols,.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero h1{font-size:22px}.hero-stat{width:100%;justify-content:space-between}.navin{padding:0 8px}.nav button{padding:11px 10px;font-size:12px}}
+
+/* Product marketplace cards — refined Shopmmo.BM style */
+#products{align-items:stretch;gap:17px}
+.product{border:1px solid #e2e9e2;border-radius:16px;box-shadow:0 3px 12px #203a2b08;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;min-width:0}
+.product:hover{transform:translateY(-3px);box-shadow:0 12px 26px #203a2b13;border-color:#c8d8cb}
+.product-art{height:142px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#173f33 0%,#28624c 58%,#66846c 100%);color:white}
+.product-art:before,.product-art:after{content:"";position:absolute;border:1px solid #ffffff25;border-radius:50%;width:190px;height:190px;right:-45px;top:-95px}
+.product-art:after{width:135px;height:135px;right:auto;left:-55px;top:75px}
+.art-glow{position:absolute;width:120px;height:120px;border-radius:50%;background:#d9c18a24;filter:blur(4px)}
+.art-mark{position:relative;z-index:1;font-size:55px;font-weight:800;color:#e0d0a7;text-shadow:0 5px 18px #071d14aa}
+.art-brand{position:absolute;left:13px;top:12px;font-size:9px;letter-spacing:2px;font-weight:850;color:#e6eee7b8}
+.art-code{position:absolute;left:13px;bottom:12px;font-size:10px;color:#e7eee8d9;letter-spacing:.4px}
+.stock-chip{position:absolute;right:11px;top:10px;background:#f5f8f2;color:#315a42;border-radius:30px;padding:4px 8px;font-size:9px;font-weight:800}
+.product .body{padding:13px 14px 14px;min-height:205px}
+.product-topline{display:flex;align-items:center;justify-content:space-between;gap:7px;margin-bottom:8px}
+.category-tag{font-size:9px;text-transform:uppercase;letter-spacing:.55px;color:#497258;background:#edf4ee;padding:4px 7px;border-radius:5px;font-weight:800}
+.product-id{font-size:9px;color:#9aa49c}
+.product h3{font-size:14px;line-height:1.35;min-height:38px;margin:0 0 5px;color:#263b30}
+.product-desc{font-size:11px;color:#849087;line-height:1.45;margin:0 0 10px;min-height:32px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.seller-line{display:flex;align-items:center;gap:6px;border-top:1px solid #eef1ed;padding:9px 0;color:#879188;font-size:10px}
+.seller-avatar{width:21px;height:21px;border-radius:50%;display:grid;place-items:center;background:#e7efe8;color:#315e43;font-size:10px;font-weight:850}
+.seller-line b{color:#52645a;font-weight:750}
+.seller-check{width:14px;height:14px;border-radius:50%;display:grid;place-items:center;background:#e7f3e9;color:#34724b;font-size:9px;font-weight:900}
+.stock-text{margin-left:auto;color:#718078}
+.product-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:8px;border-top:1px solid #eef1ed;padding-top:10px}
+.product-bottom small{font-size:9px;color:#8a958d}
+.product .price{font-size:18px;line-height:1.25;color:#245b49;white-space:nowrap}
+.product .actions{gap:6px;margin:0}
+.product .actions .btn{font-size:10px;padding:8px 9px;white-space:nowrap}
+.product .actions .btn:disabled{opacity:.4}
+@media(max-width:600px){#products{gap:10px}.product-art{height:104px}.art-mark{font-size:43px}.product .body{padding:10px;min-height:205px}.product h3{font-size:12px;min-height:34px}.product-desc{font-size:10px}.product .price{font-size:15px}.product .actions .btn{font-size:10px;padding:7px 7px}.seller-line{font-size:9px}}
+
+
+/* Seller listing image upload and product photo display */
+.sell-preview{margin-top:8px;border:1px dashed #cbd9ce;background:#f7faf7;border-radius:10px;padding:8px;width:max-content;max-width:100%}
+.sell-preview img{display:block;max-width:220px;max-height:150px;object-fit:contain;border-radius:7px}
+.product-photo{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.product-art:has(.product-photo){background:#e8eee9}
+.product-art:has(.product-photo) .stock-chip{z-index:2;box-shadow:0 2px 8px #0002}
+#page-sell .panel{max-width:850px}
+#page-sell .field input[type=file]{padding:9px;background:#f8faf8}
+
+
+/* Separate buyer and seller account onboarding */
+.auth-switch{display:grid;grid-template-columns:1fr 1fr;gap:7px;background:#f0f4f0;padding:5px;border-radius:10px;margin-bottom:15px}
+.auth-switch button{background:transparent;color:#52675a;padding:9px;border-radius:7px;font-weight:800}
+.auth-switch button.active{background:#245b49;color:white;box-shadow:0 2px 7px #163b2a20}
+.role-picks{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:0 0 15px}
+.role-pick{background:#fff;border:1px solid #dce6dd;border-radius:11px;padding:12px 10px;text-align:left;color:#314b3b;display:flex;flex-direction:column;gap:5px}
+.role-pick.active{border:2px solid #4a8060;background:#f1f7f1;padding:11px 9px;box-shadow:0 3px 10px #244f3510}
+.role-icon{font-size:23px}.role-pick b{font-size:12px}.role-pick small{font-size:10px;color:#7c8980;line-height:1.35}
+#registerForm .field label{display:flex;align-items:center;gap:6px}
+@media(max-width:480px){.role-picks{grid-template-columns:1fr}.role-pick{padding:13px 12px;min-height:88px}}
+
+
+#loginDialog{max-width:470px}
+#registerPane>.field{margin-bottom:8px}
+.role-pick{min-height:112px;cursor:pointer;width:100%;align-items:flex-start}.role-pick:focus-visible{outline:3px solid #9abda5;outline-offset:2px}
+#registerForm .field input{min-height:42px}
+.register-selected{font-weight:800;color:#245b49;background:#f1f7f1;border:1px solid #d7e7d9;padding:11px 13px;border-radius:9px;margin-bottom:10px}
+
+
+.register-overlay{position:fixed;inset:0;z-index:9999;background:rgba(15,27,20,.66);display:flex;align-items:center;justify-content:center;padding:16px;overflow:auto}
+.register-modal{width:min(100%,470px);max-height:calc(100dvh - 32px);overflow:auto;background:#fff;border-radius:16px;box-shadow:0 22px 70px #0005}
+.register-intro{font-size:14px;font-weight:750;margin-bottom:12px;color:#33483a}
+.register-modal .role-picks{display:grid;grid-template-columns:1fr;gap:12px;margin:0}
+.register-modal .role-pick{min-height:100px;width:100%;cursor:pointer;padding:16px;text-align:left;border:1px solid #dce6dd;border-radius:12px;background:#fff;display:flex;flex-direction:column;gap:7px;color:#314b3b}
+.register-modal .role-pick:active{background:#f1f7f1;border-color:#4a8060}
+.register-modal .role-pick b{font-size:13px}
+.register-modal .role-pick small{font-size:12px;line-height:1.45;color:#718076}
+.register-modal .field input{min-height:44px}
+.register-selected{font-weight:800;color:#245b49;background:#f1f7f1;border:1px solid #d7e7d9;padding:12px;border-radius:9px;margin-bottom:14px}
+@media(max-width:480px){.register-overlay{align-items:flex-start;padding:12px}.register-modal{margin:auto 0}}
+</style></head>
+<body>
+<header><div class="top"><div><div class="brand">Shopmmo.<span>BM</span></div><div class="tag">MARKETPLACE · GIAO DỊCH SỐ</div></div><div class="search"><input id="search" placeholder="Tìm sản phẩm, danh mục..."><button onclick="renderProducts()">Tìm</button></div><div class="userbar"><span id="who"></span><button class="btn light small" id="registerBtn" onclick="openRegister()">Tạo tài khoản</button><button class="btn gold small" id="loginBtn" onclick="openLogin()">Đăng nhập</button><button class="btn light small hidden" id="logoutBtn" onclick="logout()">Thoát</button></div></div>
+<div class="nav"><div class="navin" id="nav">
+<button class="active" data-page="home">Chợ giao dịch</button><button data-page="seller">Người bán</button><button data-page="sell">Đăng bán</button><button data-page="orders">Đơn mua/bán</button><button data-page="wallet">Ví & nạp tiền</button><button data-page="chat">Tin nhắn</button><button data-page="disputes">Khiếu nại</button><button data-page="admin" id="adminNav" class="hidden">Quản trị Admin</button>
+</div></div></header>
+<main class="wrap">
+<section id="page-home" class="page"><div class="hero"><div><div class="pill">SÀN GIAO DỊCH TRUNG GIAN</div><h1>Mua bán tài khoản số an tâm hơn</h1><p>Người bán đăng sản phẩm · Người mua đặt hàng · Admin hỗ trợ xử lý giao dịch.</p></div><div class="hero-stat"><div class="stat"><strong id="countProducts">0</strong><small>Sản phẩm</small></div><div class="stat"><strong id="countOrders">0</strong><small>Đơn giao dịch</small></div><div class="stat"><strong>24/7</strong><small>Tiếp nhận yêu cầu</small></div></div></div><div class="sectionhead"><h2>Sản phẩm đang rao bán</h2><span class="muted">Giá và số lượng do người bán cập nhật</span></div><div id="products" class="grid">
+<article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">♪</span><span class="art-code">TÀI KHOẢN SỐ</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">Tài khoản số</span><span class="product-id">SP1001</span></div><h3>Tài khoản TikTok Lite Nhật Bản</h3><p class="product-desc">Mặt hàng mẫu trên chợ giao dịch Shopmmo.BM.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 10</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">10.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article>
+<article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">✉</span><span class="art-code">EMAIL</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">Email</span><span class="product-id">SP1002</span></div><h3>Tài khoản Gmail</h3><p class="product-desc">Mặt hàng Gmail mẫu, vui lòng trao đổi với người bán.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 25</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">3.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article>
+<article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">f</span><span class="art-code">MẠNG XÃ HỘI</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">Mạng xã hội</span><span class="product-id">SP1005</span></div><h3>Tài khoản Facebook</h3><p class="product-desc">Tin đăng Facebook minh họa.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 15</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">12.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article>
+<article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">Z</span><span class="art-code">TÀI KHOẢN SỐ</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">Tài khoản số</span><span class="product-id">SP1006</span></div><h3>Tài khoản Zalo</h3><p class="product-desc">Tin đăng Zalo minh họa.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 7</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">10.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article>
+<article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">●</span><span class="art-code">APPLE ID</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">Tài khoản số</span><span class="product-id">SP1007</span></div><h3>Tài khoản ID Apple</h3><p class="product-desc">Mẫu tin đăng ID Apple, giá minh họa.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 5</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">35.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article>
+<article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">▤</span><span class="art-code">SIM & SỐ</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">SIM & số điện thoại</span><span class="product-id">SP1009</span></div><h3>SIM số đẹp Việt Nam</h3><p class="product-desc">Mẫu tin đăng SIM số đẹp.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 3</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">150.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article>
+<article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">✉</span><span class="art-code">EMAIL</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">Email</span><span class="product-id">SP1011</span></div><h3>Tài khoản Hotmail</h3><p class="product-desc">Mẫu tin đăng Hotmail, cần xác nhận nguồn gốc và điều kiện bàn giao.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 20</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">5.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article><article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">♪</span><span class="art-code">TIKTOK · MỸ</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">TikTok quốc tế</span><span class="product-id">SP1012</span></div><h3>Tài khoản TikTok Mỹ</h3><p class="product-desc">Danh mục TikTok khu vực Mỹ, giao dịch tài khoản hợp pháp.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 8</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">25.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article><article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">♪</span><span class="art-code">TIKTOK · NHẬT BẢN</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">TikTok quốc tế</span><span class="product-id">SP1013</span></div><h3>Tài khoản TikTok Nhật Bản</h3><p class="product-desc">Danh mục TikTok khu vực Nhật Bản, có thông tin bàn giao.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 8</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">30.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article><article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">♪</span><span class="art-code">TIKTOK · INDONESIA</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">TikTok quốc tế</span><span class="product-id">SP1014</span></div><h3>Tài khoản TikTok Indonesia</h3><p class="product-desc">Danh mục TikTok khu vực Indonesia.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 10</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">22.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article><article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">f</span><span class="art-code">FANPAGE</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">Fanpage</span><span class="product-id">SP1015</span></div><h3>Fanpage Facebook</h3><p class="product-desc">Fanpage có xác minh quyền quản trị và quy trình bàn giao.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 4</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">150.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article><article class="product"><div class="product-art"><span class="art-brand">SHOPMMO.BM</span><span class="art-mark">▣</span><span class="art-code">TKQC</span><span class="stock-chip">● Còn hàng</span></div><div class="body"><div class="product-topline"><span class="category-tag">Tài khoản quảng cáo</span><span class="product-id">SP1016</span></div><h3>Tài khoản quảng cáo (TKQC)</h3><p class="product-desc">Quyền truy cập quảng cáo theo điều kiện chuyển giao của nền tảng.</p><div class="seller-line"><span class="seller-avatar">S</span><span>Người bán <b>seller</b></span><span class="stock-text">SL: 4</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">200.000₫</div></div><div class="actions"><button class="btn light" onclick="openLogin()">Chat</button><button class="btn" onclick="openLogin()">Mua ngay</button></div></div></div></article></div></section>
+<section id="page-seller" class="page hidden"><div class="sectionhead"><h2>Khu vực người bán</h2><button class="btn" onclick="page('sell')">＋ Đăng mặt hàng mới</button></div><div class="cols"><div class="panel"><div class="muted">Sản phẩm của tôi</div><div class="wallet" id="sellerProductCount">0</div><small class="muted">Bao gồm sản phẩm chờ duyệt và đang bán</small></div><div class="panel"><div class="muted">Đơn hàng bán được</div><div class="wallet" id="sellerOrderCount">0</div><small class="muted">Các đơn liên quan đến tài khoản người bán</small></div></div><div class="panel"><h3>Danh sách mặt hàng của tôi</h3><div id="sellerProducts" class="tablewrap"></div></div></section>
+<section id="page-sell" class="page hidden"><div class="sectionhead"><h2>Đăng sản phẩm cần bán</h2><span class="pill">Dành cho người bán</span></div><div class="panel"><form id="sellForm" class="formgrid"><div class="field"><label>Tên mặt hàng *</label><input name="name" required placeholder="Ví dụ: TikTok, Gmail, Facebook..."></div><div class="field"><label>Danh mục *</label><select name="category" required><option>Tài khoản số</option><option>Email</option><option>Mạng xã hội</option><option>SIM & số điện thoại</option><option>ID Apple</option><option>Dịch vụ</option><option>Khác</option></select></div><div class="field"><label>Giá bán (VNĐ) *</label><input name="price" type="number" min="1" step="1" required placeholder="Nhập giá cho 1 sản phẩm"></div><div class="field"><label>Số lượng đăng bán *</label><input name="qty" type="number" min="1" step="1" required placeholder="Ví dụ: 10"></div><div class="field full"><label>Ảnh sản phẩm (không bắt buộc)</label><input id="sellImage" name="image" type="file" accept="image/*"><small class="muted">Chọn ảnh từ điện thoại hoặc máy tính. Ảnh sẽ hiển thị trên thẻ sản phẩm.</small><div id="sellImagePreview" class="sell-preview hidden"></div></div><div class="field full"><label>Mô tả sản phẩm</label><textarea name="desc" placeholder="Mô tả tình trạng, thông tin sản phẩm, điều kiện bảo hành và lưu ý..."></textarea></div><div class="field full row"><button class="btn" type="submit">Đăng sản phẩm chờ duyệt</button><button class="btn light" type="reset">Nhập lại</button></div></form></div><div class="notice">Sản phẩm mới sẽ ở trạng thái chờ Admin duyệt trước khi hiển thị công khai.</div></section>
+<section id="page-orders" class="page hidden"><div class="sectionhead"><h2>Đơn mua / bán của tôi</h2></div><div class="panel tablewrap" id="myOrders"></div></section>
+<section id="page-wallet" class="page hidden"><div class="sectionhead"><h2>Ví Shopmmo.BM</h2></div><div class="cols"><div class="panel"><div class="muted">Số dư khả dụng (demo)</div><div class="wallet" id="balance">0₫</div><p class="muted">Số dư được cập nhật khi Admin duyệt yêu cầu nạp hoặc hoàn tiền.</p><button class="btn" onclick="show('depositForm')">＋ Tạo yêu cầu nạp tiền</button></div><div class="panel"><b>Yêu cầu rút / hoàn tiền</b><p class="muted">Gửi yêu cầu để Admin kiểm tra và xử lý theo chính sách.</p><button class="btn light" onclick="show('refundForm')">Tạo yêu cầu hoàn tiền</button></div></div>
+<div id="depositForm" class="panel hidden"><h3>Nạp VNĐ / Crypto</h3><form id="depForm" class="formgrid"><div class="field"><label>Phương thức</label><select name="method"><option>Chuyển khoản VNĐ</option><option>USDT TRC20</option><option>USDT BEP20</option><option>ETH ERC20</option><option>TRX</option></select></div><div class="field"><label>Số tiền quy đổi VNĐ</label><input name="amount" type="number" min="1000" required></div><div class="field full"><label>Mã giao dịch / nội dung chuyển khoản</label><input name="reference" required placeholder="Nhập mã giao dịch hoặc nội dung chuyển khoản"></div><div class="field full"><label>Ghi chú</label><textarea name="note"></textarea></div><div class="field full row"><button class="btn">Gửi yêu cầu nạp</button><button type="button" class="btn light" onclick="hide('depositForm')">Đóng</button></div></form></div>
+<div id="refundForm" class="panel hidden"><h3>Yêu cầu hoàn tiền</h3><form id="refForm" class="formgrid"><div class="field"><label>Mã đơn hàng</label><input name="orderId" required></div><div class="field"><label>Số tiền đề nghị (VNĐ)</label><input name="amount" type="number" min="1" required></div><div class="field full"><label>Lý do hoàn tiền</label><textarea name="reason" required></textarea></div><div class="field full"><button class="btn">Gửi yêu cầu hoàn tiền</button></div></form></div>
+<div class="panel"><h3>Lịch sử ví & yêu cầu</h3><div id="walletHistory" class="tablewrap"></div></div></section>
+<section id="page-chat" class="page hidden"><div class="sectionhead"><h2>Chat giao dịch</h2></div><div class="cols"><div class="panel"><b>Chọn cuộc trò chuyện</b><div id="chatList"></div></div><div class="panel"><div id="chatTitle">Chưa chọn cuộc trò chuyện</div><div id="chatMessages" class="chatbox"></div><form id="chatForm" class="row" style="margin-top:9px"><input name="message" required placeholder="Nhập tin nhắn..." style="flex:1;min-width:0;padding:10px;border:1px solid var(--line);border-radius:8px"><button class="btn">Gửi</button></form></div></div></section>
+<section id="page-disputes" class="page hidden"><div class="sectionhead"><h2>Trung tâm khiếu nại</h2><button class="btn" onclick="show('complaintForm')">＋ Tạo khiếu nại</button></div><div id="complaintForm" class="panel hidden"><form id="complaint" class="formgrid"><div class="field"><label>Mã đơn hàng</label><input name="orderId" required></div><div class="field"><label>Loại khiếu nại</label><select name="type"><option>Chưa nhận được hàng</option><option>Sản phẩm không đúng mô tả</option><option>Người bán không phản hồi</option><option>Vấn đề thanh toán</option><option>Khác</option></select></div><div class="field full"><label>Nội dung và bằng chứng mô tả</label><textarea name="detail" required></textarea></div><div class="field full"><button class="btn">Gửi khiếu nại</button></div></form></div><div id="disputeList" class="panel tablewrap"></div></section>
+<section id="page-admin" class="page hidden"><div class="sectionhead"><h2>Bảng điều khiển Admin</h2><span class="pill adminmark">QUẢN TRỊ HỆ THỐNG</span></div><div class="notice">Tài khoản Admin mẫu chỉ để thử giao diện. Dữ liệu đang lưu trên trình duyệt hiện tại, chưa phải hệ thống tiền thật hoặc nhiều người dùng.</div><div class="tabs" id="adminTabs"><button class="active" data-tab="pending">Duyệt sản phẩm</button><button data-tab="deposits">Nạp tiền</button><button data-tab="refunds">Hoàn tiền</button><button data-tab="orders">Đơn hàng</button><button data-tab="disputes">Khiếu nại</button><button data-tab="users">Người dùng</button></div><div id="adminContent" class="panel tablewrap"></div></section>
+</main><div class="footer">© 2026 Shopmmo.BM · Đăng nhập và danh sách sản phẩm kết nối Supabase · Đơn hàng, ví, chat và khiếu nại đang chờ tích hợp backend</div>
+<dialog id="loginDialog"><div class="modalhead"><div><b id="authTitle">Tài khoản Shopmmo.BM</b><div class="muted" style="font-size:11px">Đăng ký hoặc đăng nhập tài khoản của bạn</div></div><button class="x" onclick="loginDialog.close()">×</button></div><div class="modalbody">
+<div class="auth-switch"><button type="button" id="showLogin" class="active" onclick="authMode('login')">Đăng nhập</button><button type="button" id="showRegister" onclick="openRegister()">Tạo tài khoản</button></div>
+<div id="loginPane"><form id="loginForm" class="formgrid"><div class="field full"><label>Email đăng nhập</label><input name="email" type="email" required autocomplete="email" placeholder="Nhập email đã đăng ký"></div><div class="field full"><label>Mật khẩu</label><input name="password" type="password" required autocomplete="current-password" placeholder="Nhập mật khẩu"></div><div class="field full"><button class="btn">Đăng nhập</button></div></form></div>
+<div id="registerPane" class="hidden"><div id="registerChoice"><div class="field full"><label>Chọn loại tài khoản bạn muốn tạo</label></div><div class="role-picks"><button type="button" class="role-pick" data-role="buyer" onclick="chooseRegisterRole('buyer')"><span class="role-icon">🛒</span><b>Tạo tài khoản mua hàng</b><small>Dùng tài khoản này để vào chợ và mua sản phẩm</small></button><button type="button" class="role-pick" data-role="seller" onclick="chooseRegisterRole('seller')"><span class="role-icon">🏪</span><b>Tạo tài khoản bán hàng</b><small>Dùng tài khoản này để đăng bán và quản lý sản phẩm</small></button></div></div><div id="registerDetails" class="hidden"><div class="register-selected" id="registerSelected"></div><button type="button" class="btn light small" onclick="backRegisterChoice()" style="margin:0 0 12px">← Chọn loại tài khoản khác</button><form id="registerForm" class="formgrid"><input type="hidden" name="role" value=""><div class="field full"><label>Tên tài khoản *</label><input name="username" required minlength="4" maxlength="24" pattern="[A-Za-z0-9_]+" autocomplete="username" placeholder="Tạo tên tài khoản (4–24 ký tự)"></div><div class="field"><label>Mật khẩu *</label><input name="password" type="password" required minlength="6" autocomplete="new-password" placeholder="Tạo mật khẩu"></div><div class="field"><label>Nhập lại mật khẩu *</label><input name="confirm" type="password" required minlength="6" autocomplete="new-password" placeholder="Nhập lại mật khẩu"></div><div class="field full"><button class="btn">Tạo tài khoản</button></div></form></div></div></dialog>
+<div id="registerOverlay" class="register-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="registerOverlayTitle">
+ <div class="register-modal">
+  <div class="modalhead">
+   <div><b id="registerOverlayTitle">Tạo tài khoản Shopmmo.BM</b><div class="muted" style="font-size:11px">Chọn loại tài khoản để bắt đầu</div></div>
+   <button type="button" class="x" onclick="closeRegister()">×</button>
+  </div>
+  <div class="modalbody">
+   <div id="registerChoiceNew">
+    <div class="register-intro">Bạn muốn sử dụng Shopmmo.BM với vai trò nào?</div>
+    <div class="role-picks">
+     <button type="button" class="role-pick" onclick="chooseRegisterRole('buyer')"><span class="role-icon">🛒</span><b>TẠO TÀI KHOẢN MUA HÀNG</b><small>Dùng để xem sản phẩm, đặt mua và theo dõi đơn hàng</small></button>
+     <button type="button" class="role-pick" onclick="chooseRegisterRole('seller')"><span class="role-icon">🏪</span><b>TẠO TÀI KHOẢN BÁN HÀNG</b><small>Dùng để đăng sản phẩm, quản lý tin đăng và đơn bán</small></button>
+    </div>
+   </div>
+   <div id="registerDetailsNew" class="hidden">
+    <div class="register-selected" id="registerSelectedNew"></div>
+    <form id="registerFormNew" class="formgrid">
+     <input type="hidden" name="role" value="">
+     <div class="field full"><label>Email *</label><input name="email" type="email" required autocomplete="email" placeholder="Email dùng để đăng nhập"></div>
+     <div class="field full"><label>Tên tài khoản *</label><input name="username" required minlength="4" maxlength="24" pattern="[A-Za-z0-9_]+" autocomplete="username" placeholder="4–24 ký tự, chữ và số"></div>
+     <div class="field full"><label>Mật khẩu *</label><input name="password" type="password" required minlength="6" autocomplete="new-password" placeholder="Tạo mật khẩu (ít nhất 6 ký tự)"></div>
+     <div class="field full"><label>Nhập lại mật khẩu *</label><input name="confirm" type="password" required minlength="6" autocomplete="new-password" placeholder="Nhập lại mật khẩu"></div>
+     <div class="field full"><button class="btn" type="submit">TẠO TÀI KHOẢN</button></div>
+    </form>
+    <button type="button" class="btn light" style="margin-top:10px;width:100%" onclick="backRegisterChoice()">← Quay lại chọn loại tài khoản</button>
+   </div>
+  </div>
+ </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL='https://uyybrejguvmzakdmmxza.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY='sb_publishable_GLHXsQbqJqtPnN0cPcbPXw_mJKBmC89';
+const supabaseClient=window.supabase?.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+let remoteProfile=null;
+const $el=id=>document.getElementById(id);
+const search=$el('search'),
+who=$el('who'),
+loginBtn=$el('loginBtn'),
+logoutBtn=$el('logoutBtn'),
+nav=$el('nav'),
+adminNav=$el('adminNav'),
+countProducts=$el('countProducts'),
+countOrders=$el('countOrders'),
+products=$el('products'),
+sellerProductCount=$el('sellerProductCount'),
+sellerOrderCount=$el('sellerOrderCount'),
+sellerProducts=$el('sellerProducts'),
+sellForm=$el('sellForm'),
+sellImage=$el('sellImage'),
+sellImagePreview=$el('sellImagePreview'),
+myOrders=$el('myOrders'),
+balance=$el('balance'),
+depositForm=$el('depositForm'),
+depForm=$el('depForm'),
+refundForm=$el('refundForm'),
+refForm=$el('refForm'),
+walletHistory=$el('walletHistory'),
+chatList=$el('chatList'),
+chatTitle=$el('chatTitle'),
+chatMessages=$el('chatMessages'),
+chatForm=$el('chatForm'),
+complaintForm=$el('complaintForm'),
+complaint=$el('complaint'),
+disputeList=$el('disputeList'),
+adminTabs=$el('adminTabs'),
+adminContent=$el('adminContent'),
+loginDialog=$el('loginDialog'),
+loginForm=$el('loginForm');
+const registerOverlay=$el('registerOverlay'),registerFormNew=$el('registerFormNew'),
+      registerBtn=$el('registerBtn'),
+      registerPane=$el('registerPane'),
+      loginPane=$el('loginPane'),
+      showLogin=$el('showLogin'),
+      showRegister=$el('showRegister'),
+      authTitle=$el('authTitle'),
+      registerForm=$el('registerForm'),
+      registerChoice=$el('registerChoiceNew'),
+      registerDetails=$el('registerDetailsNew'),
+      registerSelected=$el('registerSelectedNew');
+
+const KEY='shopmmobm_demo_v1';
+const seed={users:[{u:'admin',p:'BMadmin123',role:'admin',name:'Admin Shopmmo.BM'},{u:'buyer',p:'123456',role:'buyer',name:'Khách mua mẫu'},{u:'seller',p:'123456',role:'seller',name:'Người bán mẫu'}],products:[
+{id:'SP1001',name:'TikTok Lite Nhật Bản',category:'Tài khoản số',price:10000,qty:10,desc:'Sản phẩm demo do người bán đăng.',seller:'seller',status:'approved'},
+{id:'SP1002',name:'Tài khoản Gmail',category:'Email',price:3000,qty:25,desc:'Tài khoản mẫu, vui lòng trao đổi trước khi mua.',seller:'seller',status:'approved'},
+{id:'SP1003',name:'SIM quốc tế',category:'SIM & số điện thoại',price:9000,qty:8,desc:'Mặt hàng minh họa trên sàn.',seller:'seller',status:'approved'},
+{id:'SP1004',name:'Tài khoản TikTok',category:'Tài khoản số',price:15000,qty:12,desc:'Mẫu tin đăng TikTok — vui lòng trao đổi chi tiết với người bán.',seller:'seller',status:'approved'},
+{id:'SP1005',name:'Tài khoản Facebook',category:'Tài khoản số',price:12000,qty:15,desc:'Mẫu tin đăng Facebook trên chợ giao dịch.',seller:'seller',status:'approved'},
+{id:'SP1006',name:'Tài khoản Zalo',category:'Tài khoản số',price:10000,qty:7,desc:'Mẫu tin đăng Zalo trên chợ giao dịch.',seller:'seller',status:'approved'},
+{id:'SP1007',name:'Tài khoản ID Apple',category:'Tài khoản số',price:35000,qty:5,desc:'Mẫu tin đăng ID Apple — thông tin chỉ mang tính minh họa.',seller:'seller',status:'approved'},
+{id:'SP1008',name:'Gmail cá nhân',category:'Email',price:5000,qty:30,desc:'Mẫu tin đăng Gmail, chi tiết do người bán cung cấp.',seller:'seller',status:'approved'},
+{id:'SP1009',name:'SIM số đẹp Việt Nam',category:'SIM & số điện thoại',price:150000,qty:3,desc:'Mẫu tin đăng SIM số đẹp, giá minh họa.',seller:'seller',status:'approved'},
+{id:'SP1010',name:'Dịch vụ hỗ trợ tài khoản',category:'Dịch vụ',price:20000,qty:10,desc:'Mẫu tin đăng dịch vụ hỗ trợ kỹ thuật.',seller:'seller',status:'approved'},
+{id:'SP1011',name:'Tài khoản Hotmail',category:'Email',price:5000,qty:20,desc:'Mẫu tin đăng Hotmail. Người bán cần xác nhận nguồn gốc và điều kiện bàn giao.',seller:'seller',status:'approved'},
+{id:'SP1012',name:'Tài khoản TikTok Mỹ',category:'TikTok quốc tế',price:25000,qty:8,desc:'Danh mục TikTok khu vực Mỹ. Chỉ giao dịch tài khoản hợp pháp, có quyền chuyển nhượng.',seller:'seller',status:'approved'},
+{id:'SP1013',name:'Tài khoản TikTok Nhật Bản',category:'TikTok quốc tế',price:30000,qty:8,desc:'Danh mục TikTok khu vực Nhật Bản. Người bán cần nêu rõ điều kiện bàn giao.',seller:'seller',status:'approved'},
+{id:'SP1014',name:'Tài khoản TikTok Indonesia',category:'TikTok quốc tế',price:22000,qty:10,desc:'Danh mục TikTok khu vực Indonesia. Chỉ giao dịch tài khoản thuộc quyền sở hữu hợp pháp.',seller:'seller',status:'approved'},
+{id:'SP1015',name:'Fanpage Facebook',category:'Fanpage',price:150000,qty:4,desc:'Danh mục fanpage. Cần xác minh quyền quản trị và quy trình bàn giao minh bạch.',seller:'seller',status:'approved'},
+{id:'SP1016',name:'Tài khoản quảng cáo (TKQC)',category:'Tài khoản quảng cáo',price:200000,qty:4,desc:'Danh mục tài khoản quảng cáo. Chỉ gồm quyền truy cập được nền tảng cho phép chuyển giao.',seller:'seller',status:'approved'}],orders:[],deposits:[],refunds:[],disputes:[],chats:[],balance:{buyer:0,seller:0},session:null};
+let db;try{db=JSON.parse(localStorage.getItem(KEY))||structuredClone(seed)}catch(e){db=structuredClone(seed)}
+// Add demo listings to older saved copies without overwriting user data.
+if(!Array.isArray(db.products))db.products=[];seed.products.forEach(sp=>{let found=db.products.find(p=>p.id===sp.id);if(!found)db.products.push(sp);else{if(!found.status)found.status=sp.status;if(found.qty==null)found.qty=sp.qty}});
+function save(){try{localStorage.setItem(KEY,JSON.stringify(db))}catch(err){console.warn('Không lưu được localStorage; dữ liệu chỉ giữ trong phiên này.',err)}renderAll()}
+let me=()=>remoteProfile?({u:remoteProfile.username,name:remoteProfile.display_name||remoteProfile.username,role:remoteProfile.role,email:remoteProfile.email}):null;let money=n=>(Number(n)||0).toLocaleString('vi-VN')+'₫';let id=pre=>pre+Date.now().toString().slice(-7);
+function page(p){document.querySelectorAll('.page').forEach(x=>x.classList.add('hidden'));document.getElementById('page-'+p).classList.remove('hidden');document.querySelectorAll('#nav button').forEach(x=>x.classList.toggle('active',x.dataset.page===p));if(p==='admin')renderAdmin();if(p==='seller')renderSeller();if(p==='chat')renderChat();if(p==='wallet')renderWallet();if(p==='orders')renderOrders();if(p==='disputes')renderDisputes()}
+document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>{let u=me(),dest=b.dataset.page;if(dest!=='home'&&!u){openLogin();return}if(dest==='admin'&&u?.role!=='admin'){alert('Chỉ Admin mới được truy cập.');return}if(['seller','sell'].includes(dest)&&u?.role!=='seller'&&u?.role!=='admin'){alert('Khu vực đăng bán dành cho tài khoản bán hàng.');return}page(dest)});
+function openLogin(){authMode('login');if(typeof loginDialog.showModal==='function')loginDialog.showModal();else loginDialog.setAttribute('open','')}
+function openRegister(){registerOverlay.classList.remove('hidden');document.body.style.overflow='hidden';backRegisterChoice()}
+function closeRegister(){registerOverlay.classList.add('hidden');document.body.style.overflow=''}
+function chooseRegisterRole(role){if(!['buyer','seller'].includes(role))return;registerFormNew.elements.role.value=role;registerChoice.classList.add('hidden');registerDetails.classList.remove('hidden');registerSelected.textContent=role==='seller'?'🏪 TẠO TÀI KHOẢN BÁN HÀNG':'🛒 TẠO TÀI KHOẢN MUA HÀNG';registerFormNew.querySelector('[name=username]').focus()}
+function backRegisterChoice(){registerDetails.classList.add('hidden');registerChoice.classList.remove('hidden');registerFormNew.reset();registerFormNew.elements.role.value=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!registerOverlay.classList.contains('hidden'))closeRegister()});
+function authMode(mode){let isReg=mode==='register';if(isReg){openRegister();return}loginPane.classList.remove('hidden');registerPane.classList.add('hidden');showLogin.classList.add('active');showRegister.classList.remove('active');authTitle.textContent='Đăng nhập Shopmmo.BM'}
+function chooseRegisterRole(role){if(!['buyer','seller'].includes(role))return;registerFormNew.elements.role.value=role;registerChoice.classList.add('hidden');registerDetails.classList.remove('hidden');registerSelected.textContent=role==='seller'?'🏪 TẠO TÀI KHOẢN BÁN HÀNG':'🛒 TẠO TÀI KHOẢN MUA HÀNG';registerFormNew.querySelector('[name=username]').focus()}function backRegisterChoice(){registerDetails.classList.add('hidden');registerChoice.classList.remove('hidden');registerFormNew.reset();registerFormNew.elements.role.value=''}
+registerFormNew.onsubmit=async e=>{
+ e.preventDefault();
+ if(!supabaseClient)return alert('Không tải được thư viện kết nối Supabase. Hãy kiểm tra Internet và tải lại trang.');
+ const f=new FormData(registerFormNew);
+ const username=String(f.get('username')||'').trim();
+ const email=String(f.get('email')||'').trim().toLowerCase();
+ const pass=String(f.get('password')||'');
+ const confirmPass=String(f.get('confirm')||'');
+ const role=String(f.get('role')||'');
+ if(!['buyer','seller'].includes(role))return alert('Bạn cần chọn loại tài khoản trước.');
+ if(!/^[A-Za-z0-9_]{4,24}$/.test(username))return alert('Tên tài khoản phải từ 4–24 ký tự, chỉ gồm chữ, số hoặc dấu gạch dưới.');
+ if(!email)return alert('Vui lòng nhập email hợp lệ.');
+ if(pass.length<8)return alert('Mật khẩu cần ít nhất 8 ký tự.');
+ if(pass!==confirmPass)return alert('Mật khẩu nhập lại không khớp.');
+ const submit=registerFormNew.querySelector('button[type="submit"]');submit.disabled=true;submit.textContent='ĐANG TẠO TÀI KHOẢN...';
+ try{
+   const {data,error}=await supabaseClient.auth.signUp({email,password:pass,options:{data:{username,role}}});
+   if(error)throw error;
+   registerFormNew.reset();closeRegister();
+   if(data.session){
+     await loadRemoteProfile();
+     await refreshRemoteProducts();
+     page(role==='seller'?'sell':'home');
+     alert('Đăng ký thành công và đã đăng nhập.');
+   }else{
+     alert('Đã gửi đăng ký. Hãy mở email để xác nhận tài khoản, sau đó đăng nhập bằng email và mật khẩu.');
+     openLogin();
+   }
+ }catch(err){alert('Không thể đăng ký: '+(err.message||'Lỗi kết nối Supabase'))}
+ finally{submit.disabled=false;submit.textContent='TẠO TÀI KHOẢN'}
+};
+function logout(){if(supabaseClient)supabaseClient.auth.signOut().then(()=>{remoteProfile=null;page('home');renderAll()});else{remoteProfile=null;renderAll()}}function logout(){db.session=null;save()}function show(id){document.getElementById(id).classList.remove('hidden')}function hide(id){document.getElementById(id).classList.add('hidden')}
+function renderHeader(){let u=me();who.textContent=u?u.name+' · '+(u.role==='seller'?'Bán hàng':u.role==='buyer'?'Mua hàng':'Admin'):'';loginBtn.classList.toggle('hidden',!!u);registerBtn.classList.toggle('hidden',!!u);logoutBtn.classList.toggle('hidden',!u);adminNav.classList.toggle('hidden',u?.role!=='admin')}
+function productGlyph(category){if((category||'').includes('Email'))return '✉';if((category||'').includes('SIM'))return '▤';if((category||'').includes('Dịch'))return '✦';return '◈'}
+function searchKey(v){return String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()} function renderProducts(){let q=searchKey(search.value);let a=(Array.isArray(db.products)?db.products:[]).filter(p=>p&&p.status==='approved'&&(!q||searchKey(`${p.name||''} ${p.category||''} ${p.desc||''}`).includes(q)));products.innerHTML=a.map(p=>`<article class="product"><div class="product-art">${p.image?`<img class="product-photo" src="${p.image}" alt="${esc(p.name)}">`:`<span class="art-glow"></span><span class="art-mark">${productGlyph(p.category)}</span><span class="art-brand">SHOPMMO.BM</span><span class="art-code">${esc(p.category)}</span>`}<span class="stock-chip">${p.qty>0?'● Còn hàng':'Hết hàng'}</span></div><div class="body"><div class="product-topline"><span class="category-tag">${esc(p.category)}</span><span class="product-id">${esc(p.id)}</span></div><h3>${esc(p.name)}</h3><p class="product-desc">${esc(p.desc||'Sản phẩm được đăng bởi thành viên Shopmmo.BM.')}</p><div class="seller-line"><span class="seller-avatar">${esc((p.seller||'S').slice(0,1).toUpperCase())}</span><span>Người bán <b>${esc(p.seller)}</b></span><span class="seller-check">✓</span><span class="stock-text">SL: ${p.qty}</span></div><div class="product-bottom"><div><small>Giá bán</small><div class="price">${money(p.price)}</div></div><div class="actions"><button class="btn light" onclick="startChat('${p.seller}','${p.id}')">Chat</button><button class="btn" ${p.qty<1?'disabled':''} onclick="buy('${p.id}')">Mua ngay</button></div></div></div></article>`).join('')||'<div class="empty">Chưa có sản phẩm phù hợp.</div>';countProducts.textContent=a.length;countOrders.textContent=db.orders.length}
+// Tìm kiếm trực tiếp khi người dùng nhập, không cần bấm nút Tìm.
+search.addEventListener('input',renderProducts); search.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();renderProducts();}});
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function buy(pid){let u=me();if(!u){openLogin();return}if(u.role!=='buyer'&&u.role!=='admin'){alert('Vui lòng dùng tài khoản mua hàng để đặt mua sản phẩm.');return}let p=db.products.find(x=>x.id===pid);if(!p||p.qty<1)return alert('Sản phẩm đã hết.');if(u.u===p.seller)return alert('Bạn không thể tự mua sản phẩm của mình.');if((db.balance[u.u]||0)<p.price)return alert('Số dư không đủ. Vào Ví & nạp tiền để tạo yêu cầu nạp; Admin cần duyệt trước.');if(!confirm(`Xác nhận đặt mua ${p.name} với giá ${money(p.price)}?`))return;db.balance[u.u]-=p.price;p.qty--;let o={id:id('DH'),pid:p.id,name:p.name,price:p.price,buyer:u.u,seller:p.seller,status:'Đã thanh toán – chờ xác nhận',created:new Date().toLocaleString('vi-VN')};db.orders.push(o);db.chats.push({id:o.id,orderId:o.id,users:[u.u,p.seller],messages:[{by:'system',text:'Đơn hàng được tạo. Hai bên có thể trao đổi tại đây.',time:new Date().toLocaleString('vi-VN')}]});save();alert('Đã tạo đơn demo. Tiền đang được ghi nhận trong trạng thái chờ xử lý.')}
+let sellImageData='';sellImage.onchange=()=>{let file=sellImage.files[0];if(!file){sellImageData='';sellImagePreview.classList.add('hidden');return}if(!file.type.startsWith('image/')){alert('Vui lòng chọn tệp hình ảnh.');sellImage.value='';return}if(file.size>1200000){alert('Ảnh tối đa 1.2MB để website demo hoạt động ổn định.');sellImage.value='';return}let reader=new FileReader();reader.onload=()=>{sellImageData=reader.result;sellImagePreview.innerHTML=`<img src="${sellImageData}" alt="Xem trước ảnh">`;sellImagePreview.classList.remove('hidden')};reader.readAsDataURL(file)};
+sellForm.onreset=()=>{sellImageData='';sellImagePreview.classList.add('hidden');sellImagePreview.innerHTML=''};
+sellForm.onsubmit=async e=>{
+ e.preventDefault();let u=me();if(!u){openLogin();return}
+ if(u.role!=='seller')return alert('Chỉ tài khoản bán hàng mới được đăng sản phẩm.');
+ if(!supabaseClient)return alert('Chưa kết nối được Supabase.');
+ const f=new FormData(sellForm);
+ try{
+  const {data:{user}}=await supabaseClient.auth.getUser();
+  const payload={seller_id:user.id,name:String(f.get('name')||'').trim(),category:String(f.get('category')||'').trim(),description:String(f.get('desc')||'').trim(),price_vnd:Number(f.get('price')),quantity:Number(f.get('qty')),status:'pending'};
+  const {error}=await supabaseClient.from('products').insert(payload);if(error)throw error;
+  sellForm.reset();sellImageData=null;if(sellImagePreview)sellImagePreview.innerHTML='';
+  await refreshRemoteProducts();alert('Đã gửi sản phẩm lên Supabase, đang chờ Admin duyệt.');page('home');
+ }catch(err){alert('Không đăng được sản phẩm: '+(err.message||'Lỗi kết nối'))}
+};
+
+depForm.onsubmit=e=>{e.preventDefault();let u=me();let f=new FormData(depForm);db.deposits.push({id:id('NAP'),user:u.u,method:f.get('method'),amount:+f.get('amount'),reference:f.get('reference'),note:f.get('note'),status:'Chờ duyệt',created:new Date().toLocaleString('vi-VN')});depForm.reset();save();alert('Đã gửi yêu cầu nạp tiền demo. Chưa có tiền thật được chuyển hoặc cộng tự động.')};
+refForm.onsubmit=e=>{e.preventDefault();let u=me();let f=new FormData(refForm);db.refunds.push({id:id('HT'),user:u.u,orderId:f.get('orderId'),amount:+f.get('amount'),reason:f.get('reason'),status:'Chờ duyệt',created:new Date().toLocaleString('vi-VN')});refForm.reset();save();alert('Đã gửi yêu cầu hoàn tiền.');hide('refundForm')};
+complaint.onsubmit=e=>{e.preventDefault();let u=me();let f=new FormData(complaint);db.disputes.push({id:id('KN'),user:u.u,orderId:f.get('orderId'),type:f.get('type'),detail:f.get('detail'),status:'Mới tiếp nhận',created:new Date().toLocaleString('vi-VN')});complaint.reset();save();hide('complaintForm');alert('Đã gửi khiếu nại.')};
+function renderWallet(){let u=me();balance.textContent=money(db.balance[u.u]||0);let rows=[...db.deposits.filter(x=>x.user===u.u).map(x=>({...x,type:'Nạp tiền'})),...db.refunds.filter(x=>x.user===u.u).map(x=>({...x,type:'Hoàn tiền'}))];walletHistory.innerHTML=rows.length?`<table><tr><th>Mã</th><th>Loại</th><th>Số tiền</th><th>Trạng thái</th></tr>${rows.map(x=>`<tr><td>${x.id}</td><td>${x.type}</td><td>${money(x.amount)}</td><td>${status(x.status)}</td></tr>`).join('')}</table>`:'<div class="empty">Chưa có lịch sử.</div>'}
+function status(s){return `<span class="pill ${s.includes('duyệt')||s.includes('tiếp nhận')||s.includes('chờ')?'wait':s.includes('Từ chối')?'bad':'good'}">${esc(s)}</span>`}
+function renderSeller(){let u=me();if(!u)return;let mine=db.products.filter(x=>x.seller===u.u);sellerProductCount.textContent=mine.length;sellerOrderCount.textContent=db.orders.filter(x=>x.seller===u.u).length;sellerProducts.innerHTML=mine.length?`<table><tr><th>Mã SP</th><th>Mặt hàng</th><th>Giá</th><th>Số lượng</th><th>Trạng thái</th></tr>${mine.map(x=>`<tr><td>${esc(x.id)}</td><td>${esc(x.name)}</td><td>${money(x.price)}</td><td>${x.qty}</td><td>${status(x.status==='approved'?'Đang hiển thị':x.status==='pending'?'Chờ Admin duyệt':'Từ chối')}</td></tr>`).join('')}</table>`:'<div class="empty">Bạn chưa đăng mặt hàng nào. Bấm “Đăng mặt hàng mới” để bắt đầu.</div>'}
+function renderOrders(){let u=me();let a=db.orders.filter(x=>x.buyer===u.u||x.seller===u.u);myOrders.innerHTML=a.length?`<table><tr><th>Mã đơn</th><th>Sản phẩm</th><th>Vai trò</th><th>Giá</th><th>Trạng thái</th><th></th></tr>${a.map(o=>`<tr><td>${o.id}</td><td>${esc(o.name)}</td><td>${o.buyer===u.u?'Người mua':'Người bán'}</td><td>${money(o.price)}</td><td>${status(o.status)}</td><td><button class="btn light small" onclick="startChat('${o.buyer===u.u?o.seller:o.buyer}','${o.pid}','${o.id}')">Chat</button> <button class="btn small" onclick="completeOrder('${o.id}')">Xác nhận nhận hàng</button></td></tr>`).join('')}</table>`:'<div class="empty">Bạn chưa có đơn hàng.</div>'}
+function completeOrder(oid){let o=db.orders.find(x=>x.id===oid);if(!o||o.buyer!==me().u)return alert('Chỉ người mua xác nhận đơn.');if(!confirm('Xác nhận đã nhận hàng?'))return;o.status='Hoàn tất';db.balance[o.seller]=(db.balance[o.seller]||0)+o.price;save();alert('Đã ghi nhận hoàn tất và cộng số dư demo cho người bán.')}
+let activeChat=null;function startChat(other,pid,oid){let u=me();if(!u){openLogin();return}let c=db.chats.find(x=>x.users.includes(u.u)&&x.users.includes(other)&&(!oid||x.orderId===oid));if(!c){c={id:id('CHAT'),orderId:oid||'',users:[u.u,other],messages:[]};db.chats.push(c)}activeChat=c.id;page('chat')}
+function renderChat(){let u=me();let list=db.chats.filter(c=>c.users.includes(u.u));chatList.innerHTML=list.map(c=>`<button class="btn light" style="display:block;width:100%;margin:6px 0;text-align:left" onclick="activeChat='${c.id}';renderChat()"> ${esc(c.users.find(x=>x!==u.u)||'Admin')} · ${c.orderId||'Trao đổi'}</button>`).join('')||'<div class="empty">Chưa có cuộc trò chuyện. Chọn Chat tại sản phẩm để bắt đầu.</div>';let c=list.find(x=>x.id===activeChat);chatTitle.textContent=c?'Trao đổi với '+c.users.find(x=>x!==u.u):'Chưa chọn cuộc trò chuyện';chatMessages.innerHTML=c?c.messages.map(m=>`<div class="msg ${m.by===u.u?'mine':''}">${esc(m.text)}<small>${esc(m.by)} · ${esc(m.time)}</small></div>`).join(''):'<div class="empty">Chọn một cuộc trò chuyện bên trái.</div>';chatMessages.scrollTop=chatMessages.scrollHeight}
+chatForm.onsubmit=e=>{e.preventDefault();let c=db.chats.find(x=>x.id===activeChat);if(!c)return alert('Hãy chọn cuộc trò chuyện.');let f=new FormData(chatForm);c.messages.push({by:me().u,text:f.get('message'),time:new Date().toLocaleString('vi-VN')});chatForm.reset();save();renderChat()};
+function renderDisputes(){let u=me();let a=db.disputes.filter(x=>x.user===u.u||u.role==='admin');disputeList.innerHTML=a.length?`<table><tr><th>Mã</th><th>Đơn hàng</th><th>Loại</th><th>Nội dung</th><th>Trạng thái</th></tr>${a.map(d=>`<tr><td>${d.id}</td><td>${esc(d.orderId)}</td><td>${esc(d.type)}</td><td>${esc(d.detail)}</td><td>${status(d.status)}</td></tr>`).join('')}</table>`:'<div class="empty">Chưa có khiếu nại.</div>'}
+let adminTab='pending';adminTabs.onclick=e=>{let b=e.target.closest('button[data-tab]');if(!b)return;adminTab=b.dataset.tab;adminTabs.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x===b));renderAdmin()};
+function renderAdmin(){if(me()?.role!=='admin')return;let a=[];if(adminTab==='pending')a=db.products.filter(x=>x.status==='pending').map(x=>`<tr><td>${x.id}</td><td>${esc(x.name)}</td><td>${esc(x.seller)}</td><td>${money(x.price)}</td><td>${x.qty}</td><td><button class="btn small" onclick="productDecision('${x.id}','approved')">Duyệt</button> <button class="btn red small" onclick="productDecision('${x.id}','rejected')">Từ chối</button></td></tr>`);if(adminTab==='deposits')a=db.deposits.map(x=>`<tr><td>${x.id}</td><td>${x.user}</td><td>${x.method}</td><td>${money(x.amount)}</td><td>${status(x.status)}</td><td><button class="btn small" onclick="approveMoney('deposit','${x.id}')">Duyệt nạp</button> <button class="btn red small" onclick="denyMoney('deposit','${x.id}')">Từ chối</button></td></tr>`);if(adminTab==='refunds')a=db.refunds.map(x=>`<tr><td>${x.id}</td><td>${x.user}</td><td>${x.orderId}</td><td>${money(x.amount)}</td><td>${status(x.status)}</td><td><button class="btn small" onclick="approveMoney('refund','${x.id}')">Duyệt hoàn</button> <button class="btn red small" onclick="denyMoney('refund','${x.id}')">Từ chối</button></td></tr>`);if(adminTab==='orders')a=db.orders.map(x=>`<tr><td>${x.id}</td><td>${esc(x.name)}</td><td>${x.buyer}</td><td>${x.seller}</td><td>${money(x.price)}</td><td>${status(x.status)}</td></tr>`);if(adminTab==='disputes')a=db.disputes.map(x=>`<tr><td>${x.id}</td><td>${x.user}</td><td>${x.orderId}</td><td>${esc(x.type)}</td><td>${status(x.status)}</td><td><button class="btn small" onclick="resolveDispute('${x.id}','Đã giải quyết')">Giải quyết</button> <button class="btn red small" onclick="resolveDispute('${x.id}','Từ chối')">Từ chối</button></td></tr>`);if(adminTab==='users')a=db.users.map(x=>`<tr><td>${x.u}</td><td>${esc(x.name)}</td><td>${x.role}</td><td>${money(db.balance[x.u]||0)}</td></tr>`);let heads={pending:'Mã SP|Tên sản phẩm|Người bán|Giá|SL|Thao tác',deposits:'Mã|Tài khoản|Phương thức|Số tiền|Trạng thái|Thao tác',refunds:'Mã|Tài khoản|Mã đơn|Số tiền|Trạng thái|Thao tác',orders:'Mã đơn|Sản phẩm|Người mua|Người bán|Giá|Trạng thái',disputes:'Mã KN|Người gửi|Mã đơn|Loại|Trạng thái|Thao tác',users:'Tài khoản|Tên|Vai trò|Số dư'};adminContent.innerHTML=`<h3>${heads[adminTab].split('|')[0]} — ${a.length} mục</h3><table><tr>${heads[adminTab].split('|').map(h=>`<th>${h}</th>`).join('')}</tr>${a.join('')}</table>${a.length?'':'<div class="empty">Chưa có dữ liệu trong mục này.</div>'}`}
+function productDecision(pid,s){let p=db.products.find(x=>x.id===pid);p.status=s;save()}
+function approveMoney(type,idv){let arr=type==='deposit'?db.deposits:db.refunds;let x=arr.find(y=>y.id===idv);if(!x||x.status!=='Chờ duyệt')return alert('Yêu cầu đã được xử lý.');if(type==='deposit'){db.balance[x.user]=(db.balance[x.user]||0)+x.amount;x.status='Đã duyệt'}else{if((db.balance[x.user]||0)<x.amount)return alert('Số dư không đủ để hoàn.');db.balance[x.user]-=x.amount;x.status='Đã duyệt – cần Admin chuyển trả ngoài hệ thống'}save()}
+function denyMoney(type,idv){let x=(type==='deposit'?db.deposits:db.refunds).find(y=>y.id===idv);if(x){x.status='Từ chối';save()}}
+function resolveDispute(idv,s){let d=db.disputes.find(x=>x.id===idv);d.status=s;save()}
+loginForm.onsubmit=async e=>{
+ e.preventDefault();
+ if(!supabaseClient)return alert('Không tải được thư viện Supabase. Hãy kiểm tra Internet.');
+ const f=new FormData(loginForm),email=String(f.get('email')||'').trim().toLowerCase(),password=String(f.get('password')||'');
+ const btn=loginForm.querySelector('button[type="submit"],button:not([type])');if(btn){btn.disabled=true;btn.textContent='ĐANG ĐĂNG NHẬP...'}
+ try{
+   const {error}=await supabaseClient.auth.signInWithPassword({email,password});if(error)throw error;
+   await loadRemoteProfile();await refreshRemoteProducts();
+   loginDialog.close();loginForm.reset();renderAll();page(remoteProfile?.role==='seller'?'sell':'home');
+ }catch(err){alert('Đăng nhập không thành công: '+(err.message||'Kiểm tra email và mật khẩu'))}
+ finally{if(btn){btn.disabled=false;btn.textContent='Đăng nhập'}}
+};
+
+async function loadRemoteProfile(){
+ if(!supabaseClient)return null;
+ const {data:{user},error:userErr}=await supabaseClient.auth.getUser();if(userErr)throw userErr;
+ if(!user){remoteProfile=null;return null}
+ const {data,error}=await supabaseClient.from('profiles').select('id,username,role,display_name').eq('id',user.id).single();
+ if(error)throw error;
+ remoteProfile={...data,email:user.email};return remoteProfile;
+}
+async function refreshRemoteProducts(){
+ if(!supabaseClient)return;
+ try{
+  const {data,error}=await supabaseClient.from('products').select('id,name,category,description,price_vnd,quantity,status,seller_id,profiles(username)').eq('status','approved').order('created_at',{ascending:false});
+  if(error)throw error;
+  db.products=(data||[]).map(p=>({id:p.id,name:p.name,category:p.category,desc:p.description,price:Number(p.price_vnd),qty:p.quantity,status:p.status,seller:p.profiles?.username||'Người bán',image:null}));
+  renderProducts();
+ }catch(err){console.warn('Không tải được sản phẩm online:',err.message)}
+}
+async function restoreSupabaseSession(){
+ if(!supabaseClient){alert('Không tải được Supabase SDK. Kiểm tra kết nối Internet.');return}
+ try{const {data:{session}}=await supabaseClient.auth.getSession();if(session){await loadRemoteProfile();await refreshRemoteProducts();renderAll()}}
+ catch(err){console.error('Khôi phục phiên đăng nhập lỗi:',err)}
+}
+if(supabaseClient){
+ supabaseClient.auth.onAuthStateChange((_event,session)=>{if(!session){remoteProfile=null;renderHeader()}});
+}
+
+function renderAll(){renderHeader();renderProducts();if(me()){if(!document.getElementById('page-wallet').classList.contains('hidden'))renderWallet();if(!document.getElementById('page-orders').classList.contains('hidden'))renderOrders();if(!document.getElementById('page-seller').classList.contains('hidden'))renderSeller();if(!document.getElementById('page-admin').classList.contains('hidden'))renderAdmin();if(!document.getElementById('page-disputes').classList.contains('hidden'))renderDisputes()}}
+renderAll();
+restoreSupabaseSession();
+</script></body></html>
